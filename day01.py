@@ -17,7 +17,7 @@ def process_line(line):
     
     return p1_digits, p2_digits
 
-def calculate_sums(file_path):
+def calculate_parts(file_path):
     with open(file_path, 'r') as file:
         data = file.read().strip()
 
@@ -32,6 +32,6 @@ def calculate_sums(file_path):
     return p1_sum, p2_sum
 
 get_data(1, 2023)
-p1_sum, p2_sum = calculate_sums('./data/input_1.txt')
-print(f'Part 1: {p1_sum}')
-print(f'Part 2: {p2_sum}')
+p1_result, p2_result = calculate_parts('./data/input_1.txt')
+print(f'Part 1: {p1_result}')
+print(f'Part 2: {p2_result}')
